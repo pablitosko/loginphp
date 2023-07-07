@@ -1,8 +1,8 @@
 <?php
-$server = "134.65.245.136";
-$username = "root";
-$password = "Sk0vr0n5k!";
-$dbname = "azuredovps";
+$server = ""; //ip ou alias
+$username = ""; //usuario
+$password = ""; //senha banco
+$dbname = ""; //database ou Schema
 // Create connection
 try{
    $conn = new PDO("mysql:host=$server;dbname=$dbname","$username","$password");
