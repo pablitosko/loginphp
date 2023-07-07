@@ -1,0 +1,11 @@
+/*Crie a Tabela*/
+CREATE DATABASE `login` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+/*Abra uma sessão sql e execute o comando abaixo para criar os campos da tabela*/
+CREATE TABLE `users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  UNIQUE KEY `users_id_IDX` (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
